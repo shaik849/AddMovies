@@ -4,10 +4,10 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const movie = {
-    title: document.getElementById("title").value,
-    image: document.getElementById("image").value,
-    releaseYear: parseInt(document.getElementById("releaseYear").value, 10),
-    imdbRating: parseFloat(document.getElementById("imdbRating").value),
+    title: document.getElementById("name").value,
+    image: document.getElementById("image_url").value,
+    releaseYear: parseInt(document.getElementById("release_year").value, 10),
+    imdbRating: parseFloat(document.getElementById("imdb_rating").value),
   };
 
   await fetch("https://json-server-1fo4.onrender.com/movies", {
